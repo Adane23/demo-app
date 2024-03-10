@@ -22,7 +22,7 @@ function AddEmployee(props) {
             password: password
         };
         //Send the data to the server
-        const apiUrl = 'http://18.222.105.158:4000/add-employee';
+        const apiUrl = 'http://3.140.196.249:4000/add-employee';
 
         const requestOptions = {
             method: 'POST',

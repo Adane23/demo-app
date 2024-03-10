@@ -23,7 +23,7 @@ function Login() {
         console.log(loginData);
 
         // Send the data to the server
-        const apiUrl = "http://18.222.105.158:4000/login";
+        const apiUrl = "http://3.140.196.249:4000/login";
         const requestOptions = {
             method: "POST",
             headers: { "Content-Type": "application/json"},
