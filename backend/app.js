@@ -12,12 +12,12 @@ const app = express();
 const dbConfig = {
     connectionLimit: 10,
     //socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
-    password: "AbeGaragePMA", //demo-app 
-    user: "demo-app",
+    password: "demo-app2", //demo-app AbeGaragePMA
+    user: "demo-app2",
     host: "127.0.0.1",//"localhost"
-    //host: "localhost",//"127.0.0.1"
+    //host: "localhost",//"127.0.0.1" 
     database: "demo-app"
-}
+} 
 
 // Create the connection to the database 
 const connection = mysql.createConnection(dbConfig);
@@ -75,7 +75,7 @@ app.post("/add-employee", (req, res) => {
         // Send a response back to the client
         res.status(200).json({ status: 'success', message: 'Employee added successfully' });
     });
-}); 
+});   
 
 
 // Post request handler to log in an employee which comes to this /login 
